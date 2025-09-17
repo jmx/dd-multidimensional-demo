@@ -1,0 +1,92 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.panels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.panel {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.account-card {
+  height: 100%;
+}
+
+.booking-card.invalid {
+  border: 1px solid #d14343;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 160px;
+}
+
+.field-label {
+  font-size: 0.85rem;
+  color: #5f6a7d;
+}
+
+.field input,
+.field select,
+.field textarea {
+  font: inherit;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background-color: #fff;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: 2px solid #3662ff;
+  outline-offset: 2px;
+}
+
+.position-row {
+  border: 1px solid #e2e4e9;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.reconstruction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reconstruction-table th,
+.reconstruction-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e4e9;
+}
+
+.reconstruction-table th {
+  background-color: #f2f4f7;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.empty-row {
+  text-align: center;
+  padding: 24px;
+  color: #5f6a7d;
+}
+
+@media (max-width: 768px) {
+  .panels-grid {
+    grid-template-columns: 1fr;
+  }
+}

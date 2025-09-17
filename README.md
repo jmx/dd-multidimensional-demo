@@ -2,6 +2,15 @@
 
 This is an interactive demo app that shows a few multidmensional accounting concepts, especially in relation to discovery work carried out in Q3 2025 and what we want to deliver in the first increment for Q4 2025.
 
+## Getting started
+
+```bash
+npm install
+npm run dev
+```
+
+The Vite dev server runs at `http://localhost:5173/demo/`.
+
 ## Design system
 I want to use the Reshaped design system for the page. The app will be built with vite and deployed at the URL /demo on a public server.
 
